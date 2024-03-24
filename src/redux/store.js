@@ -3,7 +3,7 @@ import ProductsReducer from "./reducers/ProductsReducer";
 import { composeWithDevTools } from "@redux-devtools/extension";
 
 const root = combineReducers({
-  ProductsReducer
+	ProductsReducer
 });
 const store = createStore(root, composeWithDevTools());
 export default store;

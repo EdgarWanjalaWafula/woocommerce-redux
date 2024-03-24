@@ -171,5 +171,4 @@ const initState = {
         return state;
     }
   };
-  export default ProductsReducer;
-  
+  export default ProductsReducer;  

@@ -6,13 +6,13 @@ import store from "./redux/store";
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Faqs from './pages/Faqs'
-import Nav from "./components/header/Index";
+import AppHeader from './components/header/AppHeader'
 import AppFooter from "./components/footer/AppFooter";
 
 export default function App() {
 	return (
 		<Provider store={store}>
-			<Nav />
+			<AppHeader />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/faqs" element={<Faqs />} />
