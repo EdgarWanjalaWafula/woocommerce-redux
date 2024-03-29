@@ -3,7 +3,8 @@ import { Provider } from "react-redux";
 
 import store from "./redux/store";
 
-import Home from './pages/Home'
+import Home from './pages/home/Home'
+import Shop from './pages/shop/Shop'
 import Contact from './pages/Contact'
 import Faqs from './pages/Faqs'
 import AppHeader from './components/header/AppHeader'
@@ -17,6 +18,7 @@ export default function App() {
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/faqs" element={<Faqs />} />
 				<Route exact path="/contact" element={<Contact />} />
+				<Route exact path="/shop" element={<Shop />} />
 			</Routes>
 			<AppFooter />
 		</Provider>

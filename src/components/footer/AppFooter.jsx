@@ -3,13 +3,13 @@ import { SOCIAL_LINKS, SHOP_LINKS, QUICK_LINKS } from './FooterLinks';
 import { Link } from 'react-router-dom';
 
 const QL = QUICK_LINKS.map(({ name, url }, index) =>
-    <li key={index}>
+    <li className='menu-item' key={index}>
         <Link to={url}>{name}</Link>
     </li>
 )
 
 const SL = SHOP_LINKS.map(({ name, url }, index) =>
-    <li key={index}>
+    <li className='menu-item' key={index}>
         <Link to={url}>{name}</Link>
     </li>
 )

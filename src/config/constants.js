@@ -23,11 +23,16 @@ export const WOO_API_ENDPOINTS = {
     ORDER: "/order",
 };
 
-export const BASEURL = 'https://newmantactical.com';
+export const WP_API_ENDPOINTS = {
+    PRIMARY_MENU:'/header-menu'
+}
+
+export const BASEURL = 'https://localhost/nuera/';
 export const CONSUMER_KEY = 'ck_902cfc29b79796a94812a1645d6f0e93394d0388';
 export const CONSUMER_SECRET = 'cs_4bfaae37bb9ea7acb9fea8a0b5161fcbd425c4b7';
+export const WP_REST_VERSION = '/v2'
 
-export const WCVERSION = "wc/v2";
+export const WCVERSION = "wc/v3";
 export const WCFM = "wcfmmp/v1";
 export const WCANALYTICS = "wc-analytics";
 

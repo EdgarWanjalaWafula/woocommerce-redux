@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from "redux";
-import ProductsReducer from "./reducers/ProductsReducer";
+import productsReducer from "./reducers/productsReducer";
+import LocationReducer from './reducers/LocationReducer'
 import { composeWithDevTools } from "@redux-devtools/extension";
 
 const root = combineReducers({
-	ProductsReducer
+	productsReducer, 
+	LocationReducer
 });
-const store = createStore(root, composeWithDevTools());
+const store = createStore(root, composeWithDevTools(), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 export default store;
