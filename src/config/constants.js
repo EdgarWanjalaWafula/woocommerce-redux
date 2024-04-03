@@ -38,3 +38,11 @@ export const WCANALYTICS = "wc-analytics";
 
 //APP constants
 export const SITENAME = 'Nuera';
+
+// Social media 
+export const SOCIALS={
+    FACEBOOK:'/',
+    TWITTER:'/',
+    INSTAGRAM:'/',
+    TIKTOK:'/'
+}

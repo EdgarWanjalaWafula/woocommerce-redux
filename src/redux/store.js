@@ -1,11 +1,10 @@
-import { createStore, combineReducers } from "redux";
+import { configureStore } from '@reduxjs/toolkit'
 import productsReducer from "./reducers/productsReducer";
-import LocationReducer from './reducers/LocationReducer'
-import { composeWithDevTools } from "@redux-devtools/extension";
 
-const root = combineReducers({
-	productsReducer, 
-	LocationReducer
-});
-const store = createStore(root, composeWithDevTools(), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = configureStore({
+	reducer:{
+		products:productsReducer
+	}
+})
+
 export default store;

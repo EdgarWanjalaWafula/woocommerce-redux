@@ -10,6 +10,9 @@ import Faqs from './pages/Faqs'
 import AppHeader from './components/header/AppHeader'
 import AppFooter from "./components/footer/AppFooter";
 
+import { fetchProducts } from './api/fetchProducts';
+store.dispatch(fetchProducts)
+
 export default function App() {
 	return (
 		<Provider store={store}>

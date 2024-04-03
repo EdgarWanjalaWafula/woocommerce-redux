@@ -1,7 +1,15 @@
-import { useSelector } from "react-redux"
+import { useSelector, connect, useDispatch } from "react-redux"
+import ShopBanner from "./ShopBanner"
+import ShopFilter from "./ShopFilter"
+import { useEffect } from "react"
 
-export default function Shop(){
-    const products = useSelector((state) => state)
+export default function Shop() {
+    const { products } = useSelector((state) => state.productsReducer);
     console.log(products)
-    return <h1>Shop</h1>
+    return (
+        <>
+            <ShopBanner />
+            <ShopFilter />
+        </>
+    )
 }
